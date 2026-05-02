@@ -1,0 +1,76 @@
+{
+  "tips": [
+    {
+      "id": 1,
+      "title": "Halten Sie die Auslastung unter 30%",
+      "content": "Die Kreditauslastung ist der zweitwichtigste Faktor in Ihrer Bewertung. Niedrige Salden im Verhältnis zu Ihrem Limit signalisieren verantwortungsvollen Umgang. Streben Sie unter 10% für die besten Ergebnisse an.",
+      "category": "Kreditscore",
+      "emoji": "💳"
+    },
+    {
+      "id": 2,
+      "title": "Richten Sie heute eine Lastschrift ein",
+      "content": "Der Zahlungsverlauf macht 35% Ihres FICO-Scores aus. Eine verpasste Zahlung kann Ihren Score um bis zu 100 Punkte senken. Das Einrichten einer Lastschrift für mindestens die Mindestzahlung schützt Sie automatisch.",
+      "category": "Kreditscore",
+      "emoji": "📅"
+    },
+    {
+      "id": 3,
+      "title": "Schließen Sie keine alten Konten",
+      "content": "Das Alter Ihres ältesten Kontos ist wichtig. Das Schließen einer Karte, die Sie jahrelang hatten, verkürzt Ihre durchschnittliche Kredithistorie — selbst wenn Sie die Karte nie benutzen.",
+      "category": "Kreditscore",
+      "emoji": "🕒"
+    },
+    {
+      "id": 4,
+      "title": "Diversifizieren Sie Ihren Kredit-Mix",
+      "content": "Sowohl revolvierenden Kredit (Karten) als auch Ratenkredite zu haben zeigt, dass Sie mehrere Typen verantwortungsvoll handhaben können — was Ihren Score um bis zu 10% steigert.",
+      "category": "Kreditscore",
+      "emoji": "🔀"
+    },
+    {
+      "id": 5,
+      "title": "Bauen Sie einen 3-Monats-Notfallfonds auf",
+      "content": "Finanzberater empfehlen, 3-6 Monate an Ausgaben gespart zu haben. Das verhindert, dass Sie sich in Notfällen auf Kreditkarten verlassen müssen.",
+      "category": "Ersparnisse",
+      "emoji": "🛡️"
+    },
+    {
+      "id": 6,
+      "title": "Beginnen Sie so früh wie möglich mit einem SIP",
+      "content": "Dank Zinseszins kann ein SIP von 100 $/Monat mit 25 Jahren statt mit 35 Jahren zu fast 3-mal mehr Vermögen bis zur Rente führen.",
+      "category": "Investition",
+      "emoji": "🌱"
+    },
+    {
+      "id": 7,
+      "title": "Überprüfen Sie Ihren Kreditbericht jährlich",
+      "content": "Fehler in Kreditberichten sind häufig. Sie haben Anspruch auf einen kostenlosen Bericht pro Jahr von jeder Auskunftei — prüfen Sie auf Fehler und bestreiten Sie Ungenauigkeiten.",
+      "category": "Kreditscore",
+      "emoji": "📋"
+    },
+    {
+      "id": 8,
+      "title": "Verhandeln Sie niedrigere Zinssätze",
+      "content": "Wenn Sie eine gute Zahlungshistorie haben, rufen Sie Ihren Kartenaussteller an und bitten Sie um einen niedrigeren effektiven Jahreszins. Viele werden zustimmen — ein niedrigerer Zinssatz reduziert die Zinsbelastung.",
+      "category": "Ersparnisse",
+      "emoji": "📞"
+    }
+  ],
+  "calculators": [
+    { "id": "emi", "name": "Ratenrechner", "description": "Monatliche Rate für jeden Kredit", "emoji": "💳", "category": "Kredit & EMI" },
+    { "id": "loan", "name": "Kreditfähigkeit", "description": "Maximale Kreditfähigkeit prüfen", "emoji": "🏠", "category": "Kredit & EMI" },
+    { "id": "vehicle", "name": "Fahrzeugkredit", "description": "Auto- & Motorradfinanzierung", "emoji": "🚗", "category": "Kredit & EMI" },
+    { "id": "prepay", "name": "Vorzeitige Tilgung", "description": "Zinsen frühzeitig sparen", "emoji": "⚡", "category": "Kredit & EMI" },
+    { "id": "sip", "name": "SIP-Rechner", "description": "Systematischer Investitionsplan", "emoji": "📈", "category": "Anlage & Sparen" },
+    { "id": "mutual", "name": "Investmentfonds", "description": "Fondswachstumsschätzer", "emoji": "📊", "category": "Anlage & Sparen" },
+    { "id": "fd", "name": "Festgeldrechner", "description": "Festgeldrenditen", "emoji": "🏦", "category": "Anlage & Sparen" },
+    { "id": "rd", "name": "Sparplanrechner", "description": "Regelmäßige Einlage", "emoji": "💰", "category": "Anlage & Sparen" },
+    { "id": "roi", "name": "ROI-Rechner", "description": "Return on Investment", "emoji": "🎯", "category": "Anlage & Sparen" },
+    { "id": "epf", "name": "EPF-Rechner", "description": "Altersvorsorgeschätzung", "emoji": "👴", "category": "Anlage & Sparen" },
+    { "id": "gst", "name": "MwSt-Rechner", "description": "Waren- und Dienstleistungssteuer", "emoji": "🧾", "category": "Steuer & Gehalt" },
+    { "id": "sales_tax", "name": "Umsatzsteuer", "description": "Regionale Umsatzsteuer", "emoji": "🏷️", "category": "Steuer & Gehalt" },
+    { "id": "salary", "name": "Gehaltsrechner", "description": "Netto-Auszahlungsbetrag", "emoji": "💼", "category": "Steuer & Gehalt" },
+    { "id": "boost", "name": "Score verbessern", "description": "Score-Verbesserung simulieren", "emoji": "🚀", "category": "Kredit-Tools" }
+  ]
+}

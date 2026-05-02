@@ -1,0 +1,174 @@
+{
+  "tips": [
+    { "id": 1, "title": "Keep utilization below 30%", "content": "Credit utilization is the second biggest factor in your score. Keeping balances low relative to your limit signals responsible usage. Aim for under 10% for the best results.", "category": "Credit Score", "emoji": "💳" },
+    { "id": 2, "title": "Set up autopay today", "content": "Payment history accounts for 35% of your FICO score. One missed payment can drop your score by up to 100 points. Setting autopay for at least the minimum payment protects you automatically.", "category": "Credit Score", "emoji": "📅" },
+    { "id": 3, "title": "Don't close old accounts", "content": "The age of your oldest account matters. Closing a card you've had for years shortens your average credit history — even if you never use the card.", "category": "Credit Score", "emoji": "🕒" },
+    { "id": 4, "title": "Diversify your credit mix", "content": "Having both revolving credit (cards) and installment loans demonstrates you can handle multiple types responsibly — boosting your score up to 10%.", "category": "Credit Score", "emoji": "🔀" },
+    { "id": 5, "title": "Build a 3-month emergency fund", "content": "Financial advisors recommend having 3–6 months of expenses saved. This prevents you from relying on credit cards during emergencies.", "category": "Savings", "emoji": "🛡️" },
+    { "id": 6, "title": "Start SIP as early as possible", "content": "Thanks to compound interest, starting a SIP of $100/month at age 25 instead of 35 can result in nearly 3x more wealth by retirement.", "category": "Investment", "emoji": "🌱" },
+    { "id": 7, "title": "Review your credit report annually", "content": "Errors on credit reports are common. You're entitled to one free report per year from each bureau — check for errors and dispute inaccuracies.", "category": "Credit Score", "emoji": "📋" },
+    { "id": 8, "title": "Negotiate lower interest rates", "content": "If you have a good payment history, call your card issuer and ask for a lower APR. Many will agree — a lower rate reduces interest drag.", "category": "Savings", "emoji": "📞" }
+  ],
+  "calculators": [
+    { "id": "emi", "name": "EMI Calculator", "description": "Monthly installment on any loan", "emoji": "💳", "category": "Loan & EMI" },
+    { "id": "loan", "name": "Loan Eligibility", "description": "Check max loan eligibility", "emoji": "🏠", "category": "Loan & EMI" },
+    { "id": "vehicle", "name": "Vehicle Loan", "description": "Auto & bike financing", "emoji": "🚗", "category": "Loan & EMI" },
+    { "id": "prepay", "name": "Loan Prepayment", "description": "Save on interest early", "emoji": "⚡", "category": "Loan & EMI" },
+    { "id": "sip", "name": "SIP Calculator", "description": "Systematic investment plan", "emoji": "📈", "category": "Investment & Savings" },
+    { "id": "mutual", "name": "Mutual Funds", "description": "Fund growth estimator", "emoji": "📊", "category": "Investment & Savings" },
+    { "id": "fd", "name": "FD Calculator", "description": "Fixed deposit returns", "emoji": "🏦", "category": "Investment & Savings" },
+    { "id": "rd", "name": "RD Calculator", "description": "Recurring deposit", "emoji": "💰", "category": "Investment & Savings" },
+    { "id": "roi", "name": "ROI Calculator", "description": "Return on investment", "emoji": "🎯", "category": "Investment & Savings" },
+    { "id": "epf", "name": "EPF Calculator", "description": "Provident fund estimate", "emoji": "👴", "category": "Investment & Savings" },
+    { "id": "gst", "name": "GST Calculator", "description": "Goods & services tax", "emoji": "🧾", "category": "Tax & Salary" },
+    { "id": "sales_tax", "name": "Sales Tax", "description": "Regional sales tax", "emoji": "🏷️", "category": "Tax & Salary" },
+    { "id": "salary", "name": "Salary Calculator", "description": "Net take-home pay", "emoji": "💼", "category": "Tax & Salary" },
+    { "id": "boost", "name": "Boost My Score", "description": "Simulate score improvement", "emoji": "🚀", "category": "Credit Tools" }
+  ],
+  "banks": [
+    { "name": "Chase Bank", "country": "USA", "customerCare": "1-800-935-9935", "logo": "🏛️", "website": "chase.com" },
+    { "name": "Bank of America", "country": "USA", "customerCare": "1-800-432-1000", "logo": "🏦", "website": "bankofamerica.com" },
+    { "name": "Wells Fargo", "country": "USA", "customerCare": "1-800-869-3557", "logo": "🔴", "website": "wellsfargo.com" },
+    { "name": "Citibank", "country": "USA", "customerCare": "1-800-374-9700", "logo": "🌐", "website": "citibank.com" },
+    { "name": "Goldman Sachs", "country": "USA", "customerCare": "1-855-730-7283", "logo": "💼", "website": "goldmansachs.com" },
+    { "name": "HSBC", "country": "UK", "customerCare": "1-800-975-4722", "logo": "🔺", "website": "hsbc.com" },
+    { "name": "Barclays", "country": "UK", "customerCare": "1-888-710-8756", "logo": "🏴", "website": "barclays.com" },
+    { "name": "Deutsche Bank", "country": "Germany", "customerCare": "1-844-428-8472", "logo": "🇩🇪", "website": "db.com" },
+    { "name": "Morgan Stanley", "country": "USA", "customerCare": "1-800-869-6397", "logo": "📊", "website": "morganstanley.com" },
+    { "name": "Standard Chartered", "country": "UK", "customerCare": "1-800-572-5678", "logo": "🌏", "website": "sc.com" },
+    { "name": "Santander", "country": "Spain", "customerCare": "1-877-768-2265", "logo": "🔥", "website": "santander.com" },
+    { "name": "BNP Paribas", "country": "France", "customerCare": "1-800-268-2148", "logo": "🇫🇷", "website": "bnpparibas.com" },
+    { "name": "ICBC", "country": "China", "customerCare": "95588", "logo": "🇨🇳", "website": "icbc.com.cn" },
+    { "name": "Mitsubishi UFJ", "country": "Japan", "customerCare": "0120-860-777", "logo": "🇯🇵", "website": "mufg.jp" },
+    { "name": "Royal Bank of Canada", "country": "Canada", "customerCare": "1-800-769-2511", "logo": "🍁", "website": "rbc.com" },
+    { "name": "ANZ Bank", "country": "Australia", "customerCare": "13 13 14", "logo": "🦘", "website": "anz.com" },
+    { "name": "SBI", "country": "India", "customerCare": "1800-425-3800", "logo": "🇮🇳", "website": "sbi.co.in" },
+    { "name": "HDFC Bank", "country": "India", "customerCare": "1800-202-6161", "logo": "💙", "website": "hdfcbank.com" },
+    { "name": "UBS", "country": "Switzerland", "customerCare": "+41-44-234-1111", "logo": "🇨🇭", "website": "ubs.com" },
+    { "name": "Credit Suisse", "country": "Switzerland", "customerCare": "+41-44-333-1111", "logo": "❄️", "website": "credit-suisse.com" }
+  ],
+  "faqs": [
+    { "q": "What is a good credit score?", "a": "Scores above 670 are considered good. Above 740 is very good, and above 800 is exceptional. Lenders offer the best rates to those with 740+." },
+    { "q": "How often does my score update?", "a": "Your credit score typically updates monthly when lenders report your account activity to the credit bureaus." },
+    { "q": "Does checking my own score hurt it?", "a": "No! Checking your own score is a 'soft inquiry' and has no impact on your credit score whatsoever." },
+    { "q": "How long do negative items stay?", "a": "Most negative items stay for 7 years. Bankruptcies can stay for up to 10 years." },
+    { "q": "What is credit utilization?", "a": "Credit utilization is the ratio of your current credit card balances to your credit limits. Lower is better — aim for under 30%." },
+    { "q": "Can I get a loan with a poor score?", "a": "Yes, but you'll face higher interest rates. Secured loans or credit-builder loans are good options to improve your score while borrowing." }
+  ],
+  "report_questions": [
+    {
+      "title": "Report Purpose", "question": "Why are you checking your credit report?", "key": "purpose",
+      "options": [
+        { "emoji": "🏠", "label": "Applying for a mortgage", "value": "mortgage" },
+        { "emoji": "🚗", "label": "Auto loan application", "value": "auto" },
+        { "emoji": "💳", "label": "Getting a new credit card", "value": "card" },
+        { "emoji": "📊", "label": "General monitoring", "value": "monitoring" }
+      ]
+    },
+    {
+      "title": "Payment History", "question": "How consistently do you make on-time payments?", "key": "payment_history",
+      "options": [
+        { "emoji": "✅", "label": "Always on time (100%)", "value": "always" },
+        { "emoji": "🟡", "label": "Usually on time (90%+)", "value": "usually" },
+        { "emoji": "⚠️", "label": "Sometimes late (70–90%)", "value": "sometimes" },
+        { "emoji": "❌", "label": "Frequently late (<70%)", "value": "rarely" }
+      ]
+    },
+    {
+      "title": "Credit Utilization", "question": "What percentage of your credit limit do you use?", "key": "utilization",
+      "options": [
+        { "emoji": "🌟", "label": "Under 10% — Excellent", "value": "under_10" },
+        { "emoji": "✅", "label": "Under 30% — Good", "value": "under_30" },
+        { "emoji": "🟡", "label": "Under 50% — Fair", "value": "under_50" },
+        { "emoji": "🔴", "label": "Over 50% — High", "value": "over_50" }
+      ]
+    },
+    {
+      "title": "Credit Mix", "question": "What types of credit accounts do you have?", "key": "credit_mix",
+      "options": [
+        { "emoji": "🏆", "label": "Cards, auto, mortgage, etc.", "value": "excellent" },
+        { "emoji": "💳", "label": "Only credit cards", "value": "cards_only" },
+        { "emoji": "🚗", "label": "Only installment loans", "value": "loans_only" },
+        { "emoji": "🌱", "label": "No active accounts", "value": "none" }
+      ]
+    },
+    {
+      "title": "Recent Applications", "question": "How many new credit applications in the last 6 months?", "key": "inquiries",
+      "options": [
+        { "emoji": "🛡️", "label": "None (0)", "value": "0" },
+        { "emoji": "🔍", "label": "One (1)", "value": "1" },
+        { "emoji": "⚠️", "label": "Two to Three (2-3)", "value": "2_3" },
+        { "emoji": "🚨", "label": "More than Three (4+)", "value": "4_plus" }
+      ]
+    }
+  ],
+  "improvement_tips": [
+    "Improve payment history — aim for 95%+ on-time payments",
+    "Reduce credit utilization below 30% (ideally under 10%)",
+    "Avoid closing old accounts — credit age builds over time",
+    "Limit new credit applications — each hard pull reduces your score",
+    "Diversify credit — mix cards with installment loans"
+  ],
+  "labels": {
+    "principal": "Loan Amount",
+    "rate": "Annual Rate (%)",
+    "months": "Tenure (months)",
+    "income": "Monthly Income",
+    "expenses": "Monthly Expenses",
+    "price": "Vehicle Price",
+    "down": "Down Payment",
+    "balance": "Outstanding Balance",
+    "extra": "Extra Payment",
+    "monthly": "Monthly Investment",
+    "years": "Years",
+    "investment": "Investment Amount",
+    "invested": "Amount Invested",
+    "finalVal": "Final Value",
+    "salary": "Monthly Basic Salary",
+    "amount": "Original Amount",
+    "gross": "Gross Annual Salary",
+    "tax": "Tax Rate (%)",
+    "deductions": "Deductions",
+    "current": "Current Score",
+    "targetUtil": "Target Utilization (%)",
+    "newAccounts": "New Accounts",
+    "monthly_emi": "Monthly EMI",
+    "total_payment": "Total Payment",
+    "total_interest": "Total Interest",
+    "max_loan_eligible": "Max Loan Eligible",
+    "max_monthly_emi": "Max Monthly EMI",
+    "disposable_income": "Disposable Income",
+    "loan_amount": "Loan Amount",
+    "total_cost": "Total Cost",
+    "interest_saved": "Interest Saved (Year)",
+    "outstanding_balance": "Outstanding Balance",
+    "new_balance": "New Balance",
+    "maturity_amount": "Maturity Amount",
+    "total_invested": "Total Invested",
+    "total_gains": "Total Gains",
+    "initial_investment": "Initial Investment",
+    "interest_earned": "Interest Earned",
+    "total_roi": "Total ROI",
+    "cagr": "CAGR (Annualized)",
+    "profit": "Profit",
+    "epf_corpus": "EPF Corpus",
+    "monthly_contribution": "Monthly Contribution",
+    "gst_amount": "GST Amount",
+    "total_incl_gst": "Total (incl. GST)",
+    "cgst": "CGST",
+    "sgst": "SGST",
+    "tax_amount": "Tax Amount",
+    "original_price": "Original Price",
+    "final_price": "Final Price",
+    "net_annual_salary": "Net Annual Salary",
+    "monthly_take_home": "Monthly Take-Home",
+    "tax_deducted": "Tax Deducted",
+    "other_deductions": "Other Deductions",
+    "projected_score": "Projected Score",
+    "estimated_boost": "Estimated Boost",
+    "chase_atm": "Chase ATM",
+    "bofa": "Bank of America",
+    "wells_fargo_atm": "Wells Fargo ATM",
+    "citibank_branch": "Citibank Branch"
+  }
+}

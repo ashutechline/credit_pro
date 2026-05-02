@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_onboarding_selection.xml -->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/personalize_app" android:textSize="26sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/choose_pref"
+            android:textSize="14sp" android:textColor="@color/text_muted"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/language_label" android:textSize="16sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp"/>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupLanguage"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:singleSelection="true" app:selectionRequired="true"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/currency_label" android:textSize="16sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp"/>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupCurrency"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:singleSelection="true" app:selectionRequired="true"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

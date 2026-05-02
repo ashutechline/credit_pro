@@ -1,0 +1,174 @@
+{
+  "tips": [
+    { "id": 1, "title": "ઉપયોગ 30% થી નીચે રાખો", "content": "તમારા સ્કોરમાં ક્રેડિટ ઉપયોગ બીજું સૌથી મોટું પરિબળ છે. 10% ની નીચે લક્ષ્ય રાખો.", "category": "ક્રેડિટ સ્કોર", "emoji": "💳" },
+    { "id": 2, "title": "આજે જ ઑટોપે સેટ કરો", "content": "ચુકવણીનો ઇતિહાસ તમારા સ્કોરનો 35% હિસ્સો ધરાવે છે. મોડો ચૂકવેલ હપ્તો તમારો સ્કોર 100 પોઇન્ટ સુધી ઘટાડી શકે છે.", "category": "ક્રેડિટ સ્કોર", "emoji": "📅" },
+    { "id": 3, "title": "જૂના ખાતાઓ બંધ કરશો નહીં", "content": "તમારા સૌથી જૂના ખાતાની ઉંમર મહત્વની છે. વર્ષો જૂનું કાર્ડ બંધ કરવાથી તમારો સરેરાશ ક્રેડિટ ઇતિહાસ ટૂંકો થાય છે.", "category": "ક્રેડિટ સ્કોર", "emoji": "🕒" },
+    { "id": 4, "title": "ક્રેડિટ મિક્સમાં વિવિધતા લાવો", "content": "ક્રેડિટ કાર્ડ્સ અને લોન બંને રાખવા જવાબદાર ઉપયોગ દર્શાવે છે.", "category": "ક્રેડિટ સ્કોર", "emoji": "🔀" },
+    { "id": 5, "title": "3 મહિનાનું ઇમરજન્સી ફંડ બનાવો", "content": "નાણાકીય સલાહકારો 3-6 મહિનાનો ખર્ચ બચાવવાની ભલામણ કરે છે.", "category": "બચત", "emoji": "🛡️" },
+    { "id": 6, "title": "શક્ય તેટલી વહેલી તકે SIP શરૂ કરો", "content": "ચક્રવૃદ્ધિ વ્યાજને કારણે, નાની ઉંમરે SIP શરૂ કરવાથી વધુ સંપત્તિ મળી શકે છે.", "category": "રોકાણ", "emoji": "🌱" },
+    { "id": 7, "title": "વાર્ષિક ક્રેડિટ રિપોર્ટની સમીક્ષા કરો", "content": "ક્રેડિટ રિપોર્ટ્સમાં ભૂલો સામાન્ય છે. ભૂલો માટે તપાસો.", "category": "ક્રેડિટ સ્કોર", "emoji": "📋" },
+    { "id": 8, "title": "ઓછા વ્યાજ દર માટે વાટાઘાટ કરો", "content": "જો તમારો ચુકવણી ઇતિહાસ સારો હોય, તો ઓછા દરની માંગણી કરો.", "category": "બચત", "emoji": "📞" }
+  ],
+  "calculators": [
+    { "id": "emi", "name": "EMI કેલ્ક્યુલેટર", "description": "કોઈપણ લોનનો માસિક હપ્તો", "emoji": "💳", "category": "લોન અને ઈએમઆઈ (EMI)" },
+    { "id": "loan", "name": "લોન યોગ્યતા", "description": "મહત્તમ લોન યોગ્યતા તપાસો", "emoji": "🏠", "category": "લોન અને ઈએમઆઈ (EMI)" },
+    { "id": "vehicle", "name": "વાહન લોન", "description": "કાર અને બાઇક ફાઇનાન્સિંગ", "emoji": "🚗", "category": "લોન અને ઈએમઆઈ (EMI)" },
+    { "id": "prepay", "name": "લોન પ્રિપેમેન્ટ", "description": "વ્યાજ પર બચત કરો", "emoji": "⚡", "category": "લોન અને ઈએમઆઈ (EMI)" },
+    { "id": "sip", "name": "SIP કેલ્ક્યુલેટર", "description": "વ્યવસ્થિત રોકાણ યોજના", "emoji": "📈", "category": "રોકાણ અને બચત" },
+    { "id": "mutual", "name": "મ્યુચ્યુઅલ ફંડ્સ", "description": "ફંડ વૃદ્ધિનો અંદાજ", "emoji": "📊", "category": "રોકાણ અને બચત" },
+    { "id": "fd", "name": "FD કેલ્ક્યુલેટર", "description": "ફિક્સ્ડ ડિપોઝિટ વળતર", "emoji": "🏦", "category": "રોકાણ અને બચત" },
+    { "id": "rd", "name": "RD કેલ્ક્યુલેટર", "description": "રિકરિંગ ડિપોઝિટ", "emoji": "💰", "category": "રોકાણ અને બચત" },
+    { "id": "roi", "name": "ROI કેલ્ક્યુલેટર", "description": "રોકાણ પર વળતર", "emoji": "🎯", "category": "રોકાણ અને બચત" },
+    { "id": "epf", "name": "EPF કેલ્ક્યુલેટર", "description": "પ્રોવિડન્ટ ફંડ અંદાજ", "emoji": "👴", "category": "રોકાણ અને બચત" },
+    { "id": "gst", "name": "GST કેલ્ક્યુલેટર", "description": "ગુડ્સ એન્ડ સર્વિસ ટેક્સ", "emoji": "🧾", "category": "ટેક્સ અને પગાર" },
+    { "id": "sales_tax", "name": "સેલ્સ ટેક્સ", "description": "પ્રાદેશિક સેલ્સ ટેક્સ", "emoji": "🏷️", "category": "ટેક્સ અને પગાર" },
+    { "id": "salary", "name": "પગાર કેલ્ક્યુલેટર", "description": "ચોખ્ખો પગાર", "emoji": "💼", "category": "ટેક્સ અને પગાર" },
+    { "id": "boost", "name": "સ્કોર વધારો", "description": "સ્કોર સુધારણાનું સિમ્યુલેશન", "emoji": "🚀", "category": "ક્રેડિટ ટૂલ્સ" }
+  ],
+  "banks": [
+    { "name": "Chase Bank", "country": "USA", "customerCare": "1-800-935-9935", "logo": "🏛️", "website": "chase.com" },
+    { "name": "Bank of America", "country": "USA", "customerCare": "1-800-432-1000", "logo": "🏦", "website": "bankofamerica.com" },
+    { "name": "Wells Fargo", "country": "USA", "customerCare": "1-800-869-3557", "logo": "🔴", "website": "wellsfargo.com" },
+    { "name": "Citibank", "country": "USA", "customerCare": "1-800-374-9700", "logo": "🌐", "website": "citibank.com" },
+    { "name": "Goldman Sachs", "country": "USA", "customerCare": "1-855-730-7283", "logo": "💼", "website": "goldmansachs.com" },
+    { "name": "HSBC", "country": "UK", "customerCare": "1-800-975-4722", "logo": "🔺", "website": "hsbc.com" },
+    { "name": "Barclays", "country": "UK", "customerCare": "1-888-710-8756", "logo": "🏴", "website": "barclays.com" },
+    { "name": "Deutsche Bank", "country": "Germany", "customerCare": "1-844-428-8472", "logo": "🇩🇪", "website": "db.com" },
+    { "name": "Morgan Stanley", "country": "USA", "customerCare": "1-800-869-6397", "logo": "📊", "website": "morganstanley.com" },
+    { "name": "Standard Chartered", "country": "UK", "customerCare": "1-800-572-5678", "logo": "🌏", "website": "sc.com" },
+    { "name": "Santander", "country": "Spain", "customerCare": "1-877-768-2265", "logo": "🔥", "website": "santander.com" },
+    { "name": "BNP Paribas", "country": "France", "customerCare": "1-800-268-2148", "logo": "🇫🇷", "website": "bnpparibas.com" },
+    { "name": "ICBC", "country": "China", "customerCare": "95588", "logo": "🇨🇳", "website": "icbc.com.cn" },
+    { "name": "Mitsubishi UFJ", "country": "Japan", "customerCare": "0120-860-777", "logo": "🇯🇵", "website": "mufg.jp" },
+    { "name": "Royal Bank of Canada", "country": "Canada", "customerCare": "1-800-769-2511", "logo": "🍁", "website": "rbc.com" },
+    { "name": "ANZ Bank", "country": "Australia", "customerCare": "13 13 14", "logo": "🦘", "website": "anz.com" },
+    { "name": "SBI", "country": "India", "customerCare": "1800-425-3800", "logo": "🇮🇳", "website": "sbi.co.in" },
+    { "name": "HDFC Bank", "country": "India", "customerCare": "1800-202-6161", "logo": "💙", "website": "hdfcbank.com" },
+    { "name": "UBS", "country": "Switzerland", "customerCare": "+41-44-234-1111", "logo": "🇨🇭", "website": "ubs.com" },
+    { "name": "Credit Suisse", "country": "Switzerland", "customerCare": "+41-44-333-1111", "logo": "❄️", "website": "credit-suisse.com" }
+  ],
+  "faqs": [
+    { "q": "સારો ક્રેડિટ સ્કોર શું છે?", "a": "670 થી ઉપરનો સ્કોર સારો માનવામાં આવે છે. 740 થી ઉપર ખૂબ સારો છે." },
+    { "q": "મારો સ્કોર કેટલી વાર અપડેટ થાય છે?", "a": "સામાન્ય રીતે દર મહિને અપડેટ થાય છે જ્યારે બેંકો તમારી માહિતી મોકલે છે." },
+    { "q": "મારો સ્કોર તપાસવાથી તે ઘટે છે?", "a": "ના! તે એક 'સોફ્ટ ઇન્ક્વાયરી' છે અને તેનાથી કોઈ નુકસાન થતું નથી." },
+    { "q": "નકારાત્મક વિગતો કેટલો સમય રહે છે?", "a": "મોટાભાગની વિગતો 7 વર્ષ માટે રહે છે." },
+    { "q": "ક્રેડિટ ઉપયોગ શું છે?", "a": "તે તમારા બાકી બેલેન્સ અને લિમિટ નો ગુણોત્તર છે. તેને 30% થી નીચે રાખો." },
+    { "q": "શું ઓછા સ્કોર સાથે લોન મળી શકે?", "a": "હા, પરંતુ ઊંચા વ્યાજ દરે. સિક્યોર્ડ લોન સારો વિકલ્પ છે." }
+  ],
+  "report_questions": [
+    {
+      "title": "રિપોર્ટનો હેતુ", "question": "તમે તમારો રિપોર્ટ શા માટે તપાસી રહ્યા છો?", "key": "purpose",
+      "options": [
+        { "emoji": "🏠", "label": "હોમ લોન માટે", "value": "mortgage" },
+        { "emoji": "🚗", "label": "ઓટો લોન માટે", "value": "auto" },
+        { "emoji": "💳", "label": "નવું ક્રેડિટ કાર્ડ લેવા", "value": "card" },
+        { "emoji": "📊", "label": "સામાન્ય તપાસ", "value": "monitoring" }
+      ]
+    },
+    {
+      "title": "ચુકવણી ઇતિહાસ", "question": "તમે કેટલી વાર સમયસર ચૂકવણી કરો છો?", "key": "payment_history",
+      "options": [
+        { "emoji": "✅", "label": "હંમેશા સમયસર (100%)", "value": "always" },
+        { "emoji": "🟡", "label": "મોટાભાગે સમયસર (90%+)", "value": "usually" },
+        { "emoji": "⚠️", "label": "ક્યારેક મોડું (70-90%)", "value": "sometimes" },
+        { "emoji": "❌", "label": "વારંવાર મોડું (<70%)", "value": "rarely" }
+      ]
+    },
+    {
+      "title": "ક્રેડિટ ઉપયોગ", "question": "તમે તમારી ક્રેડિટ લિમિટનો કેટલો ભાગ વાપરો છો?", "key": "utilization",
+      "options": [
+        { "emoji": "🌟", "label": "10% થી ઓછું — ઉત્તમ", "value": "under_10" },
+        { "emoji": "✅", "label": "30% થી ઓછું — સારું", "value": "under_30" },
+        { "emoji": "🟡", "label": "50% થી ઓછું — વ્યાજબી", "value": "under_50" },
+        { "emoji": "🔴", "label": "50% થી વધુ — ઉચ્ચ", "value": "over_50" }
+      ]
+    },
+    {
+      "title": "ક્રેડિટ મિક્સ", "question": "તમારી પાસે કયા પ્રકારના ખાતા છે?", "key": "credit_mix",
+      "options": [
+        { "emoji": "🏆", "label": "કાર્ડ, ઓટો, હોમ લોન વગેરે.", "value": "excellent" },
+        { "emoji": "💳", "label": "માત્ર ક્રેડિટ કાર્ડ", "value": "cards_only" },
+        { "emoji": "🚗", "label": "માત્ર હપ્તાવાળી લોન", "value": "loans_only" },
+        { "emoji": "🌱", "label": "કોઈ સક્રિય ખાતા નથી", "value": "none" }
+      ]
+    },
+    {
+      "title": "તાજેતરની પૂછપરછ", "question": "છેલ્લા 6 મહિનામાં કેટલી નવી લોન અરજીઓ કરી?", "key": "inquiries",
+      "options": [
+        { "emoji": "🛡️", "label": "એક પણ નહીં (0)", "value": "0" },
+        { "emoji": "🔍", "label": "એક (1)", "value": "1" },
+        { "emoji": "⚠️", "label": "બે થી ત્રણ (2-3)", "value": "2_3" },
+        { "emoji": "🚨", "label": "ત્રણથી વધુ (4+)", "value": "4_plus" }
+      ]
+    }
+  ],
+  "improvement_tips": [
+    "ચુકવણી ઇતિહાસ સુધારો — 95%+ સમયસર ચુકવણીઓનું લક્ષ્ય રાખો",
+    "ક્રેડિટ ઉપયોગને 30% થી નીચે લાવો",
+    "જૂના ખાતાઓ બંધ કરવાનું ટાળો",
+    "નવી ક્રેડિટ અરજીઓ મર્યાદિત કરો",
+    "ક્રેડિટમાં વિવિધતા લાવો"
+  ],
+  "labels": {
+    "principal": "લોનની રકમ",
+    "rate": "વાર્ષિક દર (%)",
+    "months": "મુદત (મહિના)",
+    "income": "માસિક આવક",
+    "expenses": "માસિક ખર્ચ",
+    "price": "વાહનની કિંમત",
+    "down": "ડાઉન પેમેન્ટ",
+    "balance": "બાકી રકમ",
+    "extra": "વધારાની ચુકવણી",
+    "monthly": "માસિક રોકાણ",
+    "years": "વર્ષ",
+    "investment": "રોકાણની રકમ",
+    "invested": "રોકાયેલી રકમ",
+    "finalVal": "અંતિમ મૂલ્ય",
+    "salary": "માસિક મૂળ પગાર",
+    "amount": "મૂળ રકમ",
+    "gross": "કુલ વાર્ષિક પગાર",
+    "tax": "ટેક્સ દર (%)",
+    "deductions": "કપાત",
+    "current": "વર્તમાન સ્કોર",
+    "targetUtil": "લક્ષિત ઉપયોગ (%)",
+    "newAccounts": "નવા ખાતા",
+    "monthly_emi": "માસિક EMI",
+    "total_payment": "કુલ ચુકવણી",
+    "total_interest": "કુલ વ્યાજ",
+    "max_loan_eligible": "મહત્તમ લોન યોગ્યતા",
+    "max_monthly_emi": "મહત્તમ માસિક EMI",
+    "disposable_income": "ઉપલબ્ધ આવક",
+    "loan_amount": "લોનની રકમ",
+    "total_cost": "કુલ ખર્ચ",
+    "interest_saved": "બચાવેલ વ્યાજ",
+    "outstanding_balance": "બાકી રકમ",
+    "new_balance": "નવું બેલેન્સ",
+    "maturity_amount": "પાકતી રકમ",
+    "total_invested": "કુલ રોકાણ",
+    "total_gains": "કુલ નફો",
+    "initial_investment": "પ્રારંભિક રોકાણ",
+    "interest_earned": "કમાયેલ વ્યાજ",
+    "total_roi": "કુલ ROI",
+    "cagr": "CAGR",
+    "profit": "નફો",
+    "epf_corpus": "EPF કોર્પસ",
+    "monthly_contribution": "માસિક ફાળો",
+    "gst_amount": "GST ની રકમ",
+    "total_incl_gst": "કુલ (GST સહિત)",
+    "cgst": "CGST",
+    "sgst": "SGST",
+    "tax_amount": "ટેક્સની રકમ",
+    "original_price": "મૂળ કિંમત",
+    "final_price": "અંતિમ કિંમત",
+    "net_annual_salary": "ચોખ્ખો વાર્ષિક પગાર",
+    "monthly_take_home": "માસિક પગાર",
+    "tax_deducted": "કપાયેલ ટેક્સ",
+    "other_deductions": "અન્ય કપાત",
+    "projected_score": "અંદાજિત સ્કોર",
+    "estimated_boost": "અંદાજિત વધારો",
+    "chase_atm": "ચેઝ એટીએમ (Chase ATM)",
+    "bofa": "બેંક ઓફ અમેરિકા",
+    "wells_fargo_atm": "વેલ્સ ફાર્ગો એટીએમ",
+    "citibank_branch": "સિટીબેંક શાખા"
+  }
+}

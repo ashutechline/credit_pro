@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_tip.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/border"
+    app:strokeWidth="1dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="16dp" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tvTipEmoji"
+                android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/bg_qa_green" android:gravity="center"
+                android:text="" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:id="@+id/tvTipCategory"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="" android:textSize="12sp" android:textStyle="bold"
+                    android:textColor="@color/primary_dark" android:background="@drawable/bg_tag_blue"
+                    android:paddingHorizontal="7dp" android:paddingVertical="2dp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/tvTipTitle"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="" android:textSize="14sp" android:textStyle="bold"
+                    android:textColor="@color/text_primary" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tvExpandIcon"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="›" android:textSize="20sp" android:textColor="@color/text_muted"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvTipBody"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="" android:textSize="13sp" android:textColor="@color/text_muted"
+            android:layout_marginTop="8dp" android:lineSpacingMultiplier="1.4"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

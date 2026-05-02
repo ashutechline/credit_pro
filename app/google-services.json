@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "807777230022",
+    "project_id": "check-credit-score-91e19",
+    "storage_bucket": "check-credit-score-91e19.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807777230022:android:1c100277d156f31bbc4bc7",
+        "android_client_info": {
+          "package_name": "com.education.creditscore.report"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpV7Uhx1BmlkZlynjiE50y1NhP_sL0cno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807777230022:android:1765e5990a27e6cdbc4bc7",
+        "android_client_info": {
+          "package_name": "com.example.credit_score"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpV7Uhx1BmlkZlynjiE50y1NhP_sL0cno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

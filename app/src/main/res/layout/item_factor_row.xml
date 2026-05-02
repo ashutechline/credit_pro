@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <TextView android:id="@+id/tvFactorLabel"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="3" android:text="Payment History"
+        android:textSize="13sp" android:textColor="@color/text_muted"/>
+
+    <ProgressBar android:id="@+id/pbFactor"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp" android:layout_height="5dp"
+        android:layout_weight="3"
+        android:progressTint="@color/green"
+        android:progressBackgroundTint="@color/border"
+        android:max="100" android:progress="92"
+        android:layout_marginHorizontal="8dp"/>
+
+    <TextView android:id="@+id/tvFactorTag"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Excellent" android:textSize="10sp" android:textStyle="bold"
+        android:textColor="#008A64" android:background="@drawable/bg_tag_green"
+        android:paddingHorizontal="8dp" android:paddingVertical="3dp"/>
+</LinearLayout>

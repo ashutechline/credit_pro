@@ -1,0 +1,76 @@
+{
+  "tips": [
+    {
+      "id": 1,
+      "title": "Maintenez l'utilisation en dessous de 30%",
+      "content": "L'utilisation du crédit est le deuxième facteur le plus important dans votre score. Maintenir des soldes bas par rapport à votre limite signale une utilisation responsable. Visez moins de 10% pour les meilleurs résultats.",
+      "category": "Score de Crédit",
+      "emoji": "💳"
+    },
+    {
+      "id": 2,
+      "title": "Configurez le paiement automatique aujourd'hui",
+      "content": "L'historique des paiements représente 35% de votre score FICO. Un paiement manqué peut faire baisser votre score de 100 points. La configuration du paiement automatique pour au moins le paiement minimum vous protège automatiquement.",
+      "category": "Score de Crédit",
+      "emoji": "📅"
+    },
+    {
+      "id": 3,
+      "title": "Ne fermez pas les anciens comptes",
+      "content": "L'âge de votre compte le plus ancien est important. Fermer une carte que vous avez depuis des années raccourcit votre historique de crédit moyen — même si vous ne l'utilisez jamais.",
+      "category": "Score de Crédit",
+      "emoji": "🕒"
+    },
+    {
+      "id": 4,
+      "title": "Diversifiez votre mix de crédit",
+      "content": "Avoir à la fois un crédit renouvelable (cartes) et des prêts à tempérament démontre que vous pouvez gérer plusieurs types de manière responsable — augmentant votre score jusqu'à 10%.",
+      "category": "Score de Crédit",
+      "emoji": "🔀"
+    },
+    {
+      "id": 5,
+      "title": "Constituez un fonds d'urgence de 3 mois",
+      "content": "Les conseillers financiers recommandent d'économiser 3 à 6 mois de dépenses. Cela vous évite de recourir aux cartes de crédit lors des urgences.",
+      "category": "Épargne",
+      "emoji": "🛡️"
+    },
+    {
+      "id": 6,
+      "title": "Commencez un SIP le plus tôt possible",
+      "content": "Grâce aux intérêts composés, commencer un SIP de 100 $/mois à 25 ans plutôt qu'à 35 ans peut générer près de 3 fois plus de richesse à la retraite.",
+      "category": "Investissement",
+      "emoji": "🌱"
+    },
+    {
+      "id": 7,
+      "title": "Vérifiez votre rapport de crédit chaque année",
+      "content": "Les erreurs dans les rapports de crédit sont courantes. Vous avez droit à un rapport gratuit par an de chaque bureau — vérifiez les erreurs et contestez les inexactitudes.",
+      "category": "Score de Crédit",
+      "emoji": "📋"
+    },
+    {
+      "id": 8,
+      "title": "Négociez des taux d'intérêt plus bas",
+      "content": "Si vous avez un bon historique de paiement, appelez votre émetteur de carte et demandez un taux annuel effectif global plus bas. Beaucoup accepteront — un taux inférieur réduit la charge des intérêts.",
+      "category": "Épargne",
+      "emoji": "📞"
+    }
+  ],
+  "calculators": [
+    { "id": "emi", "name": "Calculateur d'IME", "description": "Mensualité de tout prêt", "emoji": "💳", "category": "Prêts et EMI" },
+    { "id": "loan", "name": "Éligibilité au Prêt", "description": "Vérifier l'éligibilité maximale au prêt", "emoji": "🏠", "category": "Prêts et EMI" },
+    { "id": "vehicle", "name": "Prêt Véhicule", "description": "Financement auto & moto", "emoji": "🚗", "category": "Prêts et EMI" },
+    { "id": "prepay", "name": "Remboursement Anticipé", "description": "Économisez sur les intérêts tôt", "emoji": "⚡", "category": "Prêts et EMI" },
+    { "id": "sip", "name": "Calculateur de SIP", "description": "Plan d'investissement systématique", "emoji": "📈", "category": "Investissement et Épargne" },
+    { "id": "mutual", "name": "Fonds Communs", "description": "Estimateur de croissance des fonds", "emoji": "📊", "category": "Investissement et Épargne" },
+    { "id": "fd", "name": "Calculateur de Dépôt à Terme", "description": "Rendements des dépôts à terme", "emoji": "🏦", "category": "Investissement et Épargne" },
+    { "id": "rd", "name": "Calculateur de Dépôt Récurrent", "description": "Dépôt récurrent", "emoji": "💰", "category": "Investissement et Épargne" },
+    { "id": "roi", "name": "Calculateur de ROI", "description": "Retour sur investissement", "emoji": "🎯", "category": "Investissement et Épargne" },
+    { "id": "epf", "name": "Calculateur d'EPF", "description": "Estimation du fonds de prévoyance", "emoji": "👴", "category": "Investissement et Épargne" },
+    { "id": "gst", "name": "Calculateur de TVA", "description": "Taxe sur les biens et services", "emoji": "🧾", "category": "Impôts et Salaire" },
+    { "id": "sales_tax", "name": "Taxe de Vente", "description": "Taxe de vente régionale", "emoji": "🏷️", "category": "Impôts et Salaire" },
+    { "id": "salary", "name": "Calculateur de Salaire", "description": "Salaire net à emporter", "emoji": "💼", "category": "Impôts et Salaire" },
+    { "id": "boost", "name": "Améliorer Mon Score", "description": "Simuler l'amélioration du score", "emoji": "🚀", "category": "Outils de Crédit" }
+  ]
+}

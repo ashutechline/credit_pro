@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="2dp">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvGreeting" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text=""
+                android:textColor="@color/text_muted" android:textSize="12sp"/>
+            <TextView android:id="@+id/tvUserName" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Welcome"
+                android:textColor="@color/text_primary" android:textSize="17sp"
+                android:textStyle="bold" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvAvatar"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:background="@drawable/bg_avatar" android:gravity="center"
+            android:textColor="@color/white" android:textSize="15sp"
+            android:textStyle="bold" android:text="AJ"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <!-- Hero Score Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_gradient_primary"
+                    android:padding="20dp" android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="@string/your_credit_score" android:textColor="#CCFFFFFF" android:textSize="13sp"/>
+                            <TextView android:id="@+id/tvScoreHero"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="712" android:textColor="@color/white"
+                                android:textSize="52sp" android:textStyle="bold"
+                                android:fontFamily="sans-serif-medium" android:lineSpacingMultiplier="1.0"/>
+                            <TextView android:id="@+id/tvScoreLabel"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Good" android:textColor="#CCFFFFFF" android:textSize="13sp"/>
+                        </LinearLayout>
+
+                        <!-- Circular progress placeholder -->
+                        <ProgressBar android:id="@+id/progressScoreCircle"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="80dp" android:layout_height="80dp"
+                            android:progressTint="@color/white"
+                            android:progressBackgroundTint="#44FFFFFF"
+                            android:max="100" android:progress="71"/>
+                    </LinearLayout>
+
+                    <ProgressBar android:id="@+id/progressScoreBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent" android:layout_height="7dp"
+                        android:layout_marginTop="16dp"
+                        android:progressTint="@color/white"
+                        android:progressBackgroundTint="#44FFFFFF"
+                        android:max="100" android:progress="71"/>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginTop="6dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="300"
+                            android:textColor="#99FFFFFF" android:textSize="11sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/good_range" android:textColor="#99FFFFFF" android:textSize="11sp"/>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="850"
+                            android:textColor="#99FFFFFF" android:textSize="11sp" android:gravity="end"/>
+                    </LinearLayout>
+
+                    <!-- Action buttons -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginTop="14dp">
+                        <LinearLayout android:id="@+id/btnCheckScore"
+                            android:layout_width="0dp" android:layout_height="64dp"
+                            android:layout_weight="1" android:background="@drawable/bg_hero_btn"
+                            android:gravity="center" android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="@string/emoji_chart" android:textSize="14sp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="@string/check_score" android:textColor="@color/white"
+                                android:textSize="13sp" android:textStyle="bold"/>
+                        </LinearLayout>
+                        <View android:layout_width="8dp" android:layout_height="1dp"/>
+                        <LinearLayout android:id="@+id/btnSimulate"
+                            android:layout_width="0dp" android:layout_height="64dp"
+                            android:layout_weight="1" android:background="@drawable/bg_hero_btn"
+                            android:gravity="center" android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="@string/emoji_target" android:textSize="14sp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="@string/simulate" android:textColor="@color/white"
+                                android:textSize="13sp" android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Quick Actions -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/quick_actions" android:textColor="@color/text_primary"
+                android:textSize="16sp" android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" android:layout_marginBottom="12dp"/>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="16dp"
+                app:cardElevation="0dp" app:strokeColor="@color/border" app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:padding="16dp" android:orientation="horizontal">
+
+                    <LinearLayout android:id="@+id/cardCalculators"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_qa_green" android:gravity="center"
+                            android:text="🧮" android:textSize="22sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/nav_calculators" android:textColor="@color/text_muted"
+                            android:textSize="10sp" android:layout_marginTop="6dp" android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/cardBanks"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_qa_amber" android:gravity="center"
+                            android:text="🏦" android:textSize="22sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/nav_banks" android:textColor="@color/text_muted"
+                            android:textSize="10sp" android:layout_marginTop="6dp" android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/cardReport"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_qa_purple" android:gravity="center"
+                            android:text="📋" android:textSize="22sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/full_report" android:textColor="@color/text_muted"
+                            android:textSize="10sp" android:layout_marginTop="6dp" android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/cardMap"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_qa_blue" android:gravity="center"
+                            android:text="🗺️" android:textSize="22sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/atm_map" android:textColor="@color/text_muted"
+                            android:textSize="10sp" android:layout_marginTop="6dp" android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Score Factors -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/score_factors" android:textColor="@color/text_primary"
+                android:textSize="16sp" android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" android:layout_marginBottom="12dp"/>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="16dp"
+                app:cardElevation="0dp" app:strokeColor="@color/border" app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:padding="16dp" android:orientation="vertical">
+
+                    <include layout="@layout/item_factor_row"
+                        android:id="@+id/factorPayment"/>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/border" android:layout_marginVertical="10dp"/>
+                    <include layout="@layout/item_factor_row"
+                        android:id="@+id/factorUtilization"/>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/border" android:layout_marginVertical="10dp"/>
+                    <include layout="@layout/item_factor_row"
+                        android:id="@+id/factorAge"/>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/border" android:layout_marginVertical="10dp"/>
+                    <include layout="@layout/item_factor_row"
+                        android:id="@+id/factorInquiries"/>
+
+                    <!-- Direct progress bars for binding -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:visibility="gone">
+                        <ProgressBar android:id="@+id/progressPayment" style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="80dp" android:layout_height="5dp"
+                            android:progressTint="@color/green" android:max="100"/>
+                        <ProgressBar android:id="@+id/progressUtilization" style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="80dp" android:layout_height="5dp"
+                            android:progressTint="@color/amber" android:max="100"/>
+                        <ProgressBar android:id="@+id/progressAge" style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="80dp" android:layout_height="5dp"
+                            android:progressTint="@color/primary" android:max="100"/>
+                        <ProgressBar android:id="@+id/progressInquiries" style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="80dp" android:layout_height="5dp"
+                            android:progressTint="@color/green" android:max="100"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tips -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/money_tips"
+                    android:textColor="@color/text_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tvSeeAllTips" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/see_all"
+                    android:textColor="@color/primary" android:textSize="13sp"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+            <View android:layout_width="match_parent" android:layout_height="24dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,170 @@
+{
+  "tips": [
+    { "id": 1, "title": "Mantenha a utilização abaixo de 30%", "content": "A utilização de crédito é o segundo maior fator na sua pontuação. Manter saldos baixos em relação ao seu limite sinaliza uso responsável.", "category": "Pontuação de Crédito", "emoji": "💳" },
+    { "id": 2, "title": "Configure o pagamento automático hoje", "content": "O histórico de pagamentos representa 35% da sua pontuação FICO. Um pagamento atrasado pode diminuir sua pontuação em até 100 pontos.", "category": "Pontuação de Crédito", "emoji": "📅" },
+    { "id": 3, "title": "Não feche contas antigas", "content": "A idade da sua conta mais antiga é importante. Fechar um cartão que você tem há anos encurta seu histórico de crédito médio.", "category": "Pontuação de Crédito", "emoji": "🕒" },
+    { "id": 4, "title": "Diversifique seu mix de crédito", "content": "Ter crédito rotativo (cartões) e empréstimos parcelados demonstra que você pode lidar com vários tipos de forma responsável.", "category": "Pontuação de Crédito", "emoji": "🔀" },
+    { "id": 5, "title": "Crie um fundo de emergência de 3 meses", "content": "Consultores financeiros recomendam ter de 3 a 6 meses de despesas economizadas. Isso evita que você dependa de cartões durante emergências.", "category": "Poupança", "emoji": "🛡️" },
+    { "id": 6, "title": "Inicie o SIP o mais cedo possível", "content": "Graças aos juros compostos, iniciar um SIP de $100/mês aos 25 anos em vez dos 35 pode resultar em quase 3 vezes mais riqueza na aposentadoria.", "category": "Investimento", "emoji": "🌱" },
+    { "id": 7, "title": "Revise seu relatório anualmente", "content": "Erros em relatórios de crédito são comuns. Verifique se há erros e conteste as imprecisões.", "category": "Pontuação de Crédito", "emoji": "📋" },
+    { "id": 8, "title": "Negocie taxas mais baixas", "content": "Se você tem um bom histórico, ligue para a emissora do seu cartão e peça uma taxa menor. Muitos concordarão.", "category": "Poupança", "emoji": "📞" }
+  ],
+  "calculators": [
+    { "id": "emi", "name": "Calculadora EMI", "description": "Parcela mensal de qualquer empréstimo", "emoji": "💳", "category": "Empréstimos e EMI" },
+    { "id": "loan", "name": "Elegibilidade de Empréstimo", "description": "Verifique a elegibilidade máxima", "emoji": "🏠", "category": "Empréstimos e EMI" },
+    { "id": "vehicle", "name": "Empréstimo de Veículo", "description": "Financiamento de carros e motos", "emoji": "🚗", "category": "Empréstimos e EMI" },
+    { "id": "prepay", "name": "Pré-pagamento de Empréstimo", "description": "Economize em juros antecipadamente", "emoji": "⚡", "category": "Empréstimos e EMI" },
+    { "id": "sip", "name": "Calculadora SIP", "description": "Plano de investimento sistemático", "emoji": "📈", "category": "Investimento e Poupança" },
+    { "id": "mutual", "name": "Fundos Mútuos", "description": "Estimador de crescimento", "emoji": "📊", "category": "Investimento e Poupança" },
+    { "id": "fd", "name": "Calculadora FD", "description": "Retornos de depósitos fixos", "emoji": "🏦", "category": "Investimento e Poupança" },
+    { "id": "rd", "name": "Calculadora RD", "description": "Depósito recorrente", "emoji": "💰", "category": "Investimento e Poupança" },
+    { "id": "roi", "name": "Calculadora ROI", "description": "Retorno sobre o investimento", "emoji": "🎯", "category": "Investimento e Poupança" },
+    { "id": "epf", "name": "Calculadora EPF", "description": "Estimativa do fundo de previdência", "emoji": "👴", "category": "Investimento e Poupança" },
+    { "id": "gst", "name": "Calculadora GST", "description": "Imposto sobre bens e serviços", "emoji": "🧾", "category": "Imposto e Salário" },
+    { "id": "sales_tax", "name": "Imposto sobre Vendas", "description": "Imposto sobre vendas regional", "emoji": "🏷️", "category": "Imposto e Salário" },
+    { "id": "salary", "name": "Calculadora de Salário", "description": "Salário líquido", "emoji": "💼", "category": "Imposto e Salário" },
+    { "id": "boost", "name": "Aumentar Pontuação", "description": "Simular melhoria de pontuação", "emoji": "🚀", "category": "Ferramentas de Crédito" }
+  ],
+  "banks": [
+    { "name": "Chase Bank", "country": "EUA", "customerCare": "1-800-935-9935", "logo": "🏛️", "website": "chase.com" },
+    { "name": "Bank of America", "country": "EUA", "customerCare": "1-800-432-1000", "logo": "🏦", "website": "bankofamerica.com" },
+    { "name": "Wells Fargo", "country": "EUA", "customerCare": "1-800-869-3557", "logo": "🔴", "website": "wellsfargo.com" },
+    { "name": "Citibank", "country": "EUA", "customerCare": "1-800-374-9700", "logo": "🌐", "website": "citibank.com" },
+    { "name": "Goldman Sachs", "country": "EUA", "customerCare": "1-855-730-7283", "logo": "💼", "website": "goldmansachs.com" },
+    { "name": "HSBC", "country": "Reino Unido", "customerCare": "1-800-975-4722", "logo": "🔺", "website": "hsbc.com" },
+    { "name": "Barclays", "country": "Reino Unido", "customerCare": "1-888-710-8756", "logo": "🏴", "website": "barclays.com" },
+    { "name": "Deutsche Bank", "country": "Alemanha", "customerCare": "1-844-428-8472", "logo": "🇩🇪", "website": "db.com" },
+    { "name": "Morgan Stanley", "country": "EUA", "customerCare": "1-800-869-6397", "logo": "📊", "website": "morganstanley.com" },
+    { "name": "Standard Chartered", "country": "Reino Unido", "customerCare": "1-800-572-5678", "logo": "🌏", "website": "sc.com" },
+    { "name": "Santander", "country": "Espanha", "customerCare": "1-877-768-2265", "logo": "🔥", "website": "santander.com" },
+    { "name": "BNP Paribas", "country": "França", "customerCare": "1-800-268-2148", "logo": "🇫🇷", "website": "bnpparibas.com" },
+    { "name": "ICBC", "country": "China", "customerCare": "95588", "logo": "🇨🇳", "website": "icbc.com.cn" },
+    { "name": "Mitsubishi UFJ", "country": "Japão", "customerCare": "0120-860-777", "logo": "🇯🇵", "website": "mufg.jp" },
+    { "name": "Royal Bank of Canada", "country": "Canadá", "customerCare": "1-800-769-2511", "logo": "🍁", "website": "rbc.com" },
+    { "name": "ANZ Bank", "country": "Austrália", "customerCare": "13 13 14", "logo": "🦘", "website": "anz.com" },
+    { "name": "SBI", "country": "Índia", "customerCare": "1800-425-3800", "logo": "🇮🇳", "website": "sbi.co.in" },
+    { "name": "HDFC Bank", "country": "Índia", "customerCare": "1800-202-6161", "logo": "💙", "website": "hdfcbank.com" },
+    { "name": "UBS", "country": "Suíça", "customerCare": "+41-44-234-1111", "logo": "🇨🇭", "website": "ubs.com" },
+    { "name": "Credit Suisse", "country": "Suíça", "customerCare": "+41-44-333-1111", "logo": "❄️", "website": "credit-suisse.com" }
+  ],
+  "faqs": [
+    { "q": "O que é uma boa pontuação?", "a": "Pontuações acima de 670 são consideradas boas." },
+    { "q": "Com que frequência atualiza?", "a": "A pontuação geralmente atualiza mensalmente." },
+    { "q": "Verificar a pontuação prejudica?", "a": "Não! É uma consulta suave e não tem impacto." },
+    { "q": "Quanto tempo duram os itens negativos?", "a": "A maioria dura 7 anos. As falências podem durar até 10 anos." },
+    { "q": "O que é utilização de crédito?", "a": "É a relação entre os saldos dos cartões e os limites. Mantenha abaixo de 30%." },
+    { "q": "Posso obter um empréstimo com pontuação baixa?", "a": "Sim, mas as taxas serão maiores. Empréstimos garantidos são boas opções." }
+  ],
+  "report_questions": [
+    {
+      "title": "Propósito do Relatório", "question": "Por que você está verificando seu relatório?", "key": "purpose",
+      "options": [
+        { "emoji": "🏠", "label": "Pedido de hipoteca", "value": "mortgage" },
+        { "emoji": "🚗", "label": "Empréstimo de carro", "value": "auto" },
+        { "emoji": "💳", "label": "Obter novo cartão", "value": "card" },
+        { "emoji": "📊", "label": "Monitoramento geral", "value": "monitoring" }
+      ]
+    },
+    {
+      "title": "Histórico de Pagamento", "question": "Com que frequência você paga em dia?", "key": "payment_history",
+      "options": [
+        { "emoji": "✅", "label": "Sempre no prazo (100%)", "value": "always" },
+        { "emoji": "🟡", "label": "Geralmente no prazo (90%+)", "value": "usually" },
+        { "emoji": "⚠️", "label": "Às vezes atrasado (70-90%)", "value": "sometimes" },
+        { "emoji": "❌", "label": "Frequentemente atrasado (<70%)", "value": "rarely" }
+      ]
+    },
+    {
+      "title": "Utilização de Crédito", "question": "Qual porcentagem do seu limite você usa?", "key": "utilization",
+      "options": [
+        { "emoji": "🌟", "label": "Menos de 10% — Excelente", "value": "under_10" },
+        { "emoji": "✅", "label": "Menos de 30% — Bom", "value": "under_30" },
+        { "emoji": "🟡", "label": "Menos de 50% — Razoável", "value": "under_50" },
+        { "emoji": "🔴", "label": "Mais de 50% — Alto", "value": "over_50" }
+      ]
+    },
+    {
+      "title": "Tipos de Crédito", "question": "Que tipos de contas você possui?", "key": "credit_mix",
+      "options": [
+        { "emoji": "🏆", "label": "Cartões, automóveis, etc.", "value": "excellent" },
+        { "emoji": "💳", "label": "Apenas cartões", "value": "cards_only" },
+        { "emoji": "🚗", "label": "Apenas empréstimos parcelados", "value": "loans_only" },
+        { "emoji": "🌱", "label": "Nenhuma conta ativa", "value": "none" }
+      ]
+    },
+    {
+      "title": "Consultas Recentes", "question": "Quantas novas aplicações em 6 meses?", "key": "inquiries",
+      "options": [
+        { "emoji": "🛡️", "label": "Nenhuma (0)", "value": "0" },
+        { "emoji": "🔍", "label": "Uma (1)", "value": "1" },
+        { "emoji": "⚠️", "label": "Duas a três (2-3)", "value": "2_3" },
+        { "emoji": "🚨", "label": "Mais de três (4+)", "value": "4_plus" }
+      ]
+    }
+  ],
+  "improvement_tips": [
+    "Melhorar o histórico de pagamentos - meta de 95%+",
+    "Reduzir a utilização de crédito abaixo de 30%",
+    "Evite fechar contas antigas",
+    "Limite novas solicitações de crédito",
+    "Diversifique o crédito - cartões e empréstimos"
+  ],
+  "labels": {
+    "principal": "Valor do Empréstimo",
+    "rate": "Taxa Anual (%)",
+    "months": "Prazo (meses)",
+    "income": "Renda Mensal",
+    "expenses": "Despesas Mensais",
+    "price": "Preço do Veículo",
+    "down": "Entrada",
+    "balance": "Saldo Devedor",
+    "extra": "Pagamento Extra",
+    "monthly": "Investimento Mensual",
+    "years": "Anos",
+    "investment": "Valor do Investimento",
+    "invested": "Valor Investido",
+    "finalVal": "Valor Final",
+    "salary": "Salário Base Mensal",
+    "amount": "Valor Original",
+    "gross": "Salário Anual Bruto",
+    "tax": "Taxa de Imposto (%)",
+    "deductions": "Deduções",
+    "current": "Pontuação Atual",
+    "targetUtil": "Utilização Alvo (%)",
+    "newAccounts": "Novas Contas",
+    "monthly_emi": "EMI Mensual",
+    "total_payment": "Pagamento Total",
+    "total_interest": "Juros Totais",
+    "max_loan_eligible": "Empréstimo Máximo",
+    "max_monthly_emi": "EMI Mensual Máximo",
+    "disposable_income": "Renda Disponível",
+    "loan_amount": "Valor do Empréstimo",
+    "total_cost": "Custo Total",
+    "interest_saved": "Juros Economizados",
+    "outstanding_balance": "Saldo Devedor",
+    "new_balance": "Novo Saldo",
+    "maturity_amount": "Valor de Vencimento",
+    "total_invested": "Total Investido",
+    "total_gains": "Ganhos Totais",
+    "initial_investment": "Investimento Inicial",
+    "interest_earned": "Juros Ganhos",
+    "total_roi": "ROI Total",
+    "cagr": "CAGR (Anualizado)",
+    "profit": "Lucro",
+    "epf_corpus": "Fundo EPF",
+    "monthly_contribution": "Contribuição Mensual",
+    "gst_amount": "Valor GST",
+    "total_incl_gst": "Total (incl. GST)",
+    "cgst": "CGST",
+    "sgst": "SGST",
+    "tax_amount": "Valor do Imposto",
+    "original_price": "Preço Original",
+    "final_price": "Preço Final",
+    "net_annual_salary": "Salário Anual Líquido",
+    "monthly_take_home": "Mensal Líquido",
+    "tax_deducted": "Imposto Deduzido",
+    "other_deductions": "Outras Deduções",
+    "projected_score": "Pontuação Projetada",
+    "estimated_boost": "Aumento Estimado"
+  }
+}

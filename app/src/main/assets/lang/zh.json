@@ -1,0 +1,76 @@
+{
+  "tips": [
+    {
+      "id": 1,
+      "title": "将使用率保持在30%以下",
+      "content": "信用使用率是影响您评分的第二大因素。相对于您的信用额度保持低余额表明负责任的使用习惯。为获得最佳结果，目标是低于10%。",
+      "category": "信用评分",
+      "emoji": "💳"
+    },
+    {
+      "id": 2,
+      "title": "今天设置自动还款",
+      "content": "还款历史占您FICO评分的35%。一次逾期还款可能使您的评分下降多达100分。设置至少最低还款额的自动还款可自动保护您的评分。",
+      "category": "信用评分",
+      "emoji": "📅"
+    },
+    {
+      "id": 3,
+      "title": "不要关闭旧账户",
+      "content": "您最早账户的年龄很重要。关闭一张持有多年的信用卡会缩短您的平均信用历史——即使您从不使用该卡。",
+      "category": "信用评分",
+      "emoji": "🕒"
+    },
+    {
+      "id": 4,
+      "title": "多样化您的信用组合",
+      "content": "同时拥有循环信贷（信用卡）和分期贷款，表明您能够负责任地处理多种类型——将您的评分提高多达10%。",
+      "category": "信用评分",
+      "emoji": "🔀"
+    },
+    {
+      "id": 5,
+      "title": "建立3个月的紧急备用金",
+      "content": "理财顾问建议储蓄3-6个月的生活支出。这可以防止您在紧急情况下依赖信用卡。",
+      "category": "储蓄",
+      "emoji": "🛡️"
+    },
+    {
+      "id": 6,
+      "title": "尽早开始定投计划",
+      "content": "得益于复利效应，在25岁而非35岁开始每月100美元的定投，到退休时可能积累近3倍的财富。",
+      "category": "投资",
+      "emoji": "🌱"
+    },
+    {
+      "id": 7,
+      "title": "每年审查您的信用报告",
+      "content": "信用报告中的错误很常见。您有权每年从每个信用机构获取一份免费报告——检查错误并对不准确之处提出异议。",
+      "category": "信用评分",
+      "emoji": "📋"
+    },
+    {
+      "id": 8,
+      "title": "协商更低的利率",
+      "content": "如果您有良好的还款记录，请致电发卡机构申请更低的年利率。许多机构会同意——更低的利率可减少利息支出。",
+      "category": "储蓄",
+      "emoji": "📞"
+    }
+  ],
+  "calculators": [
+    { "id": "emi", "name": "EMI计算器", "description": "任何贷款的每月还款额", "emoji": "💳", "category": "贷款和 EMI" },
+    { "id": "loan", "name": "贷款资格", "description": "查看最高贷款资格", "emoji": "🏠", "category": "贷款和 EMI" },
+    { "id": "vehicle", "name": "车辆贷款", "description": "汽车和摩托车融资", "emoji": "🚗", "category": "贷款和 EMI" },
+    { "id": "prepay", "name": "贷款提前还款", "description": "提前节省利息", "emoji": "⚡", "category": "贷款和 EMI" },
+    { "id": "sip", "name": "定投计算器", "description": "系统投资计划", "emoji": "📈", "category": "投资和储蓄" },
+    { "id": "mutual", "name": "共同基金", "description": "基金增长估算器", "emoji": "📊", "category": "投资和储蓄" },
+    { "id": "fd", "name": "定期存款计算器", "description": "定期存款收益", "emoji": "🏦", "category": "投资和储蓄" },
+    { "id": "rd", "name": "零存整取计算器", "description": "定期存款计划", "emoji": "💰", "category": "投资和储蓄" },
+    { "id": "roi", "name": "投资回报率计算器", "description": "投资回报率", "emoji": "🎯", "category": "投资和储蓄" },
+    { "id": "epf", "name": "公积金计算器", "description": "公积金估算", "emoji": "👴", "category": "投资和储蓄" },
+    { "id": "gst", "name": "商品服务税计算器", "description": "商品和服务税", "emoji": "🧾", "category": "税务和工资" },
+    { "id": "sales_tax", "name": "销售税", "description": "地区销售税", "emoji": "🏷️", "category": "税务和工资" },
+    { "id": "salary", "name": "薪资计算器", "description": "税后实得薪资", "emoji": "💼", "category": "税务和工资" },
+    { "id": "boost", "name": "提升我的评分", "description": "模拟评分改善", "emoji": "🚀", "category": "信用工具" }
+  ]
+}
