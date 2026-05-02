@@ -43,85 +43,193 @@
 
             <!-- Hero Score Card -->
             <androidx.cardview.widget.CardView
-                android:layout_width="match_parent" android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp" app:cardElevation="0dp"
-                android:layout_marginBottom="16dp">
-                <LinearLayout
-                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="24dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/bg_gradient_primary"
-                    android:padding="20dp" android:orientation="vertical">
+                    android:paddingHorizontal="24dp"
+                    android:paddingTop="28dp"
+                    android:paddingBottom="24dp">
 
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="horizontal" android:gravity="center_vertical">
-                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
-                            android:layout_weight="1" android:orientation="vertical">
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="@string/your_credit_score" android:textColor="#CCFFFFFF" android:textSize="13sp"/>
-                            <TextView android:id="@+id/tvScoreHero"
-                                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="712" android:textColor="@color/white"
-                                android:textSize="52sp" android:textStyle="bold"
-                                android:fontFamily="sans-serif-medium" android:lineSpacingMultiplier="1.0"/>
-                            <TextView android:id="@+id/tvScoreLabel"
-                                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="Good" android:textColor="#CCFFFFFF" android:textSize="13sp"/>
-                        </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvScoreTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="0.05"
+                        android:text="@string/your_credit_score"
+                        android:textColor="#E6FFFFFF"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                        <!-- Circular progress placeholder -->
-                        <ProgressBar android:id="@+id/progressScoreCircle"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="80dp" android:layout_height="80dp"
-                            android:progressTint="@color/white"
-                            android:progressBackgroundTint="#44FFFFFF"
-                            android:max="100" android:progress="71"/>
-                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvScoreLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_tag_white"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="6dp"
+                        android:text="Good"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/tvScoreTitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tvScoreTitle"
+                        app:layout_constraintVertical_bias="0.0" />
 
-                    <ProgressBar android:id="@+id/progressScoreBar"
+                    <TextView
+                        android:id="@+id/tvScoreHero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:includeFontPadding="false"
+                        android:text="712"
+                        android:textColor="@color/white"
+                        android:textSize="72sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvScoreTitle" />
+
+                    <TextView
+                        android:id="@+id/tvScorePoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="pts"
+                        android:textColor="#B3FFFFFF"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@id/tvScoreHero"
+                        app:layout_constraintStart_toEndOf="@id/tvScoreHero" />
+
+                    <ProgressBar
+                        android:id="@+id/progressScoreBar"
                         style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="match_parent" android:layout_height="7dp"
-                        android:layout_marginTop="16dp"
-                        android:progressTint="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="28dp"
+                        android:max="100"
+                        android:progress="71"
                         android:progressBackgroundTint="#44FFFFFF"
-                        android:max="100" android:progress="71"/>
+                        android:progressTint="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvScoreHero" />
 
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="horizontal" android:layout_marginTop="6dp">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                            android:layout_weight="1" android:text="300"
-                            android:textColor="#99FFFFFF" android:textSize="11sp"/>
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="@string/good_range" android:textColor="#99FFFFFF" android:textSize="11sp"/>
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                            android:layout_weight="1" android:text="850"
-                            android:textColor="#99FFFFFF" android:textSize="11sp" android:gravity="end"/>
+                    <LinearLayout
+                        android:id="@+id/rangeLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/progressScoreBar">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="300"
+                            android:textColor="#99FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="@string/good_range"
+                            android:textColor="#E6FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="end"
+                            android:text="850"
+                            android:textColor="#99FFFFFF"
+                            android:textSize="12sp" />
                     </LinearLayout>
 
                     <!-- Action buttons -->
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="horizontal" android:layout_marginTop="14dp">
-                        <LinearLayout android:id="@+id/btnCheckScore"
-                            android:layout_width="0dp" android:layout_height="64dp"
-                            android:layout_weight="1" android:background="@drawable/bg_hero_btn"
-                            android:gravity="center" android:orientation="horizontal">
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="@string/emoji_chart" android:textSize="14sp"/>
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="@string/check_score" android:textColor="@color/white"
-                                android:textSize="13sp" android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/rangeLabels">
+
+                        <LinearLayout
+                            android:id="@+id/btnCheckScore"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_hero_btn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/emoji_chart"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/check_score"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
                         </LinearLayout>
-                        <View android:layout_width="8dp" android:layout_height="1dp"/>
-                        <LinearLayout android:id="@+id/btnSimulate"
-                            android:layout_width="0dp" android:layout_height="64dp"
-                            android:layout_weight="1" android:background="@drawable/bg_hero_btn"
-                            android:gravity="center" android:orientation="horizontal">
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="@string/emoji_target" android:textSize="14sp"/>
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                android:text="@string/simulate" android:textColor="@color/white"
-                                android:textSize="13sp" android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="12dp"
+                            android:layout_height="1dp" />
+
+                        <LinearLayout
+                            android:id="@+id/btnSimulate"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_hero_btn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/emoji_target"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/simulate"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <!-- Quick Actions -->

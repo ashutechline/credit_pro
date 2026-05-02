@@ -88,7 +88,7 @@
 
     <!-- New Layout Strings -->
     <string name="bank_directory">Bank Directory</string>
-    <string name="find_atm">🗺️ Find ATM</string>
+    <string name="find_atm">Find ATM</string>
     <string name="search_banks">Search banks...</string>
     <string name="tips_insights">Tips &amp; Insights</string>
     <string name="faq_title">Frequently Asked Questions</string>

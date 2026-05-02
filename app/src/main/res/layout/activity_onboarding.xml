@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:orientation="horizontal">
 
     <!-- Progress bar -->
     <ProgressBar
@@ -12,17 +12,17 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="6dp"
-        android:progressTint="@color/primary"
-        android:progressBackgroundTint="@color/border"
         android:max="100"
-        android:progress="20"/>
+        android:progress="20"
+        android:progressBackgroundTint="@color/border"
+        android:progressTint="@color/primary" />
 
     <!-- ViewPager -->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
     <!-- Modern Dot Indicator -->
     <LinearLayout
@@ -38,21 +38,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:padding="24dp">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnBack"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="72dp"
-            android:text="Back"
-            android:visibility="gone"
             android:layout_marginEnd="12dp"
+            android:text="Back"
             android:textColor="@color/text_muted"
-            app:strokeColor="@color/border"
-            app:cornerRadius="14dp"/>
+            android:visibility="gone"
+            app:cornerRadius="14dp"
+            app:strokeColor="@color/border" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"
@@ -60,7 +60,7 @@
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:layout_weight="1"
-            android:text="Next"/>
+            android:text="Next" />
 
     </LinearLayout>
 </LinearLayout>
