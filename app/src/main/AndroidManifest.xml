@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".CreditProApplication"
+        android:name="com.education.creditscore.calculator.CreditProApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -44,7 +44,7 @@
 
         <!-- Splash / Main Activity -->
         <activity
-            android:name=".activities.SplashActivity"
+            android:name="com.education.creditscore.calculator.activities.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.CreditPro.Splash"
             android:screenOrientation="portrait">
@@ -55,13 +55,13 @@
         </activity>
 
         <activity
-            android:name=".activities.OnboardingActivity"
+            android:name="com.education.creditscore.calculator.activities.OnboardingActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.CreditPro" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.education.creditscore.calculator.activities.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.CreditPro"
@@ -69,7 +69,7 @@
 
         <!-- Firebase Messaging -->
         <service
-            android:name=".services.CreditProMessagingService"
+            android:name="com.education.creditscore.calculator.services.CreditProMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -78,7 +78,7 @@
 
         <!-- Work Manager for notifications -->
         <receiver
-            android:name=".services.NotificationReceiver"
+            android:name="com.education.creditscore.calculator.services.NotificationReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

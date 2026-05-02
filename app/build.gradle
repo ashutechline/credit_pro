@@ -10,13 +10,13 @@ plugins {
 }
 
 android {
-    namespace 'com.creditpro.app'
-    compileSdk 34
+    namespace 'com.education.creditscore.calculator'
+    compileSdk 35
 
     defaultConfig {
-        applicationId "com.education.creditscore.report"
+        applicationId "com.education.creditscore.calculator"
         minSdk 24
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

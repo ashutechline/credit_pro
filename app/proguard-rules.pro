@@ -1,7 +1,7 @@
 # CreditPro ProGuard Rules
 
 # Keep model classes
--keep class com.creditpro.app.models.** { *; }
+-keep class com.education.creditscore.calculator.models.** { *; }
 
 # Firebase
 -keep class com.google.firebase.** { *; }
