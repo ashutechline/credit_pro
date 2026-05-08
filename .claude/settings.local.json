@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Get-ChildItem -Path 'app\\\\src\\\\main\\\\java\\\\com\\\\education\\\\creditscore\\\\calculator' -Recurse -Filter '*.kt' | Select-Object -ExpandProperty FullName\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'app\\\\src\\\\main\\\\res\\\\layout' -Filter '*.xml' | Measure-Object | Select-Object -ExpandProperty Count\")"
+    ]
+  }
+}
