@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         
         binding.bottomNav.setupWithNavController(navController)
 
-        // Hide/Show Toolbar and Bottom Nav
+        // Show toolbar on sub-screens, always show bottom nav for easy Home access
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val isTopLevel = destination.id in listOf(
                 R.id.homeFragment,
@@ -59,13 +59,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.bankDirectoryFragment,
                 R.id.profileFragment
             )
-            
-            // Show toolbar only on non-top-level screens (except maybe splash/onboarding if they were here)
-            // But onboarding is a separate activity.
+
+            // Toolbar only visible on sub-screens (provides back navigation)
             binding.toolbar.visibility = if (isTopLevel) android.view.View.GONE else android.view.View.VISIBLE
-            
-            binding.bottomNav.visibility = if (isTopLevel)
-                android.view.View.VISIBLE else android.view.View.GONE
+
+            // Bottom nav always visible — lets user tap Home from any screen
+            binding.bottomNav.visibility = android.view.View.VISIBLE
         }
     }
 

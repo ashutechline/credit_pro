@@ -43,6 +43,19 @@
         <action android:id="@+id/action_banks_to_map" app:destination="@id/mapViewFragment"
             app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+        <action android:id="@+id/action_banks_to_bankDetail" app:destination="@id/bankDetailFragment"
+            app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bankDetailFragment"
+        android:name="com.education.creditscore.calculator.fragments.BankDetailFragment"
+        android:label="Bank Info"
+        tools:layout="@layout/fragment_bank_detail">
+        <argument
+            android:name="bankName"
+            app:argType="string" />
     </fragment>
 
     <fragment

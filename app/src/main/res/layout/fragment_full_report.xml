@@ -44,10 +44,34 @@
                 <LinearLayout android:id="@+id/llOptions" android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:orientation="vertical"/>
 
+                <!-- Hint shown when no option selected -->
+                <TextView
+                    android:id="@+id/tvSelectHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_to_select"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_muted"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"/>
+
+                <!-- Next button — shown after option selected -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNextReport"
+                    style="@style/Widget.CreditPro.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="@string/next"
+                    android:visibility="gone"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="4dp"/>
+
                 <TextView android:id="@+id/btnBackReport" android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:text="@string/go_back"
                     android:textColor="@color/text_muted" android:textSize="14sp"
-                    android:visibility="gone" android:padding="8dp" android:layout_marginTop="8dp"/>
+                    android:visibility="gone" android:padding="8dp" android:layout_marginTop="4dp"/>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
     </LinearLayout>

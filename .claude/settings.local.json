@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(powershell -Command \"Get-ChildItem -Path 'app\\\\src\\\\main\\\\java\\\\com\\\\education\\\\creditscore\\\\calculator' -Recurse -Filter '*.kt' | Select-Object -ExpandProperty FullName\")",
-      "Bash(powershell -Command \"Get-ChildItem -Path 'app\\\\src\\\\main\\\\res\\\\layout' -Filter '*.xml' | Measure-Object | Select-Object -ExpandProperty Count\")"
+      "Bash(powershell -Command \"Get-ChildItem -Path 'app\\\\src\\\\main\\\\res\\\\layout' -Filter '*.xml' | Measure-Object | Select-Object -ExpandProperty Count\")",
+      "Bash(Get-ChildItem -Path \"f:\\\\StudioProjects\\\\Ashu Techline\\\\CreditProApp_Android_Kotlin\\\\CreditProApp\" -Force)",
+      "Bash(Select-Object -Property Name, FullName)",
+      "Bash(grep \"\\\\.xml$\")"
     ]
   }
 }

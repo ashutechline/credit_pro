@@ -164,4 +164,21 @@
     <string name="emoji_card">💳</string>
     <string name="emoji_target">🎯</string>
     <string name="general_label">General</string>
+
+    <!-- Bank Detail -->
+    <string name="bank_info_title">Bank Information</string>
+    <string name="website_label">Website</string>
+    <string name="call_now">Call Now</string>
+    <string name="visit_website">Visit Website</string>
+    <string name="no_website">No website listed</string>
+    <string name="country_label">Country</string>
+    <string name="contact_info">Contact Information</string>
+
+    <!-- Calculator -->
+    <string name="invalid_inputs">Please enter valid values and try again</string>
+
+    <!-- Selection screens -->
+    <string name="select_preferred_lang">Choose your preferred display language</string>
+    <string name="select_preferred_currency">Choose your preferred currency symbol</string>
+    <string name="tap_to_select">Tap an option to select it, then tap Next to continue</string>
 </resources>

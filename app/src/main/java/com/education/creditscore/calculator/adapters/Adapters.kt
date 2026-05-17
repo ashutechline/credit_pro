@@ -14,6 +14,7 @@ import com.education.creditscore.calculator.services.DataService
 
 // ── Bank Adapter ──────────────────────────────────────────────────────────────
 class BankAdapter(
+    private val onBankClick: (Bank) -> Unit,
     private val onCall: (Bank) -> Unit
 ) : ListAdapter<Bank, BankAdapter.ViewHolder>(BankDiff()) {
 
@@ -34,6 +35,7 @@ class BankAdapter(
         holder.tvName.text = bank.name
         holder.tvPhone.text = bank.customerCare
         holder.tvCountry.text = bank.country
+        holder.itemView.setOnClickListener { onBankClick(bank) }
         holder.btnCall.setOnClickListener { onCall(bank) }
     }
 

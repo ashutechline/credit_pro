@@ -196,6 +196,7 @@ class CalcDetailFragment : Fragment() {
                 binding.cardResult.visibility = View.GONE
             }
         }
+
     }
 
     private fun buildInputFields(id: String) {
@@ -219,6 +220,10 @@ class CalcDetailFragment : Fragment() {
 
     private fun compute() {
         val inputs = inputViews.mapValues { it.value.text.toString().replace(",", "").toDoubleOrNull() ?: 0.0 }
+        if (inputs.values.all { it == 0.0 }) {
+            Snackbar.make(binding.root, getString(R.string.invalid_inputs), Snackbar.LENGTH_SHORT).show()
+            return
+        }
         viewModel.compute(inputs)
     }
 
@@ -438,6 +443,7 @@ class FullReportFragment : Fragment() {
     private val questions = DataService.reportQuestions
     private var currentStep = 0
     private var finalScore = 0
+    private var pendingOptionValue: String? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentFullReportBinding.inflate(inflater, container, false)
@@ -452,6 +458,7 @@ class FullReportFragment : Fragment() {
     private fun showQuestion(index: Int) {
         if (index >= questions.size) { showResult(); return }
         currentStep = index
+        pendingOptionValue = null
         val q = questions[index]
 
         binding.tvStepLabel.text = getString(R.string.step_count_format, index + 1, questions.size)
@@ -465,10 +472,35 @@ class FullReportFragment : Fragment() {
             itemView.findViewById<TextView>(R.id.tvOptionEmoji).text = option.emoji
             itemView.findViewById<TextView>(R.id.tvOptionLabel).text = option.label
             itemView.setOnClickListener {
-                viewModel.setReportAnswer(q.key, option.value)
-                showQuestion(index + 1)
+                // Reset all option cards to unselected state
+                for (i in 0 until binding.llOptions.childCount) {
+                    val child = binding.llOptions.getChildAt(i)
+                    (child as? androidx.cardview.widget.CardView)?.apply {
+                        setCardBackgroundColor(resources.getColor(R.color.card, null))
+                        alpha = 0.65f
+                    }
+                }
+                // Highlight the selected card
+                (itemView as? androidx.cardview.widget.CardView)?.apply {
+                    setCardBackgroundColor(resources.getColor(R.color.primary_light, null))
+                    alpha = 1f
+                }
+                pendingOptionValue = option.value
+                binding.tvSelectHint.visibility = View.GONE
+                binding.btnNextReport.visibility = View.VISIBLE
             }
             binding.llOptions.addView(itemView)
+        }
+
+        // Reset state for new question
+        binding.btnNextReport.visibility = View.GONE
+        binding.tvSelectHint.visibility = View.VISIBLE
+
+        binding.btnNextReport.setOnClickListener {
+            pendingOptionValue?.let { value ->
+                viewModel.setReportAnswer(q.key, value)
+                showQuestion(index + 1)
+            }
         }
 
         binding.btnBackReport.visibility = if (index > 0) View.VISIBLE else View.GONE
@@ -519,12 +551,18 @@ class BankDirectoryFragment : Fragment() {
     }
 
     private fun setupRecycler() {
-        val adapter = BankAdapter { bank ->
-            val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${bank.customerCare.replace(Regex("[^0-9+]"), "")}"))
-            try { startActivity(intent) } catch (e: Exception) {
-                Snackbar.make(binding.root, getString(R.string.cannot_call), Snackbar.LENGTH_SHORT).show()
+        val adapter = BankAdapter(
+            onBankClick = { bank ->
+                val action = BankDirectoryFragmentDirections.actionBanksToBankDetail(bank.name)
+                findNavController().navigate(action)
+            },
+            onCall = { bank ->
+                val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${bank.customerCare.replace(Regex("[^0-9+]"), "")}"))
+                try { startActivity(intent) } catch (e: Exception) {
+                    Snackbar.make(binding.root, getString(R.string.cannot_call), Snackbar.LENGTH_SHORT).show()
+                }
             }
-        }
+        )
         binding.rvBanks.layoutManager = LinearLayoutManager(requireContext())
         binding.rvBanks.adapter = adapter
 
@@ -973,14 +1011,73 @@ class CurrencySelectionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        
+
         val currencies = listOf("USD", "EUR", "GBP", "INR", "JPY", "CAD", "AUD")
         val currentCur = viewModel.currency.value ?: "USD"
-        
+
         binding.rvCurrency.layoutManager = LinearLayoutManager(requireContext())
         binding.rvCurrency.adapter = com.education.creditscore.calculator.adapters.SelectionAdapter(currencies, currentCur) { cur ->
             viewModel.setCurrency(cur)
             findNavController().popBackStack()
+        }
+    }
+
+    override fun onDestroyView() { super.onDestroyView(); _binding = null }
+}
+
+// ── Bank Detail Fragment ──────────────────────────────────────────────────────
+@AndroidEntryPoint
+class BankDetailFragment : Fragment() {
+
+    private var _binding: FragmentBankDetailBinding? = null
+    private val binding get() = _binding!!
+    private val args: BankDetailFragmentArgs by navArgs()
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        _binding = FragmentBankDetailBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val bank = com.education.creditscore.calculator.services.DataService.banks
+            .find { it.name == args.bankName } ?: return
+
+        binding.tvBankDetailEmoji.text = bank.logoEmoji
+        binding.tvBankDetailName.text = bank.name
+        binding.tvBankDetailCountryBadge.text = bank.country
+        binding.tvBankDetailCountry.text = bank.country
+        binding.tvBankDetailPhone.text = bank.customerCare
+
+        if (bank.website.isNotBlank()) {
+            binding.tvBankDetailWebsite.text = bank.website
+        } else {
+            binding.tvBankDetailWebsite.text = getString(R.string.no_website)
+            binding.tvVisitWebsite.visibility = View.GONE
+            binding.cardWebsite.isClickable = false
+        }
+
+        binding.cardCall.setOnClickListener { dialBank(bank.customerCare) }
+        binding.btnCallBank.setOnClickListener { dialBank(bank.customerCare) }
+
+        binding.cardWebsite.setOnClickListener {
+            if (bank.website.isNotBlank()) openWebsite(bank.website)
+        }
+    }
+
+    private fun dialBank(number: String) {
+        val cleaned = number.replace(Regex("[^0-9+]"), "")
+        val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$cleaned"))
+        try { startActivity(intent) } catch (e: Exception) {
+            Snackbar.make(binding.root, getString(R.string.cannot_call), Snackbar.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun openWebsite(website: String) {
+        val url = if (website.startsWith("http")) website else "https://$website"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        try { startActivity(intent) } catch (e: Exception) {
+            Snackbar.make(binding.root, "Cannot open website", Snackbar.LENGTH_SHORT).show()
         }
     }
 
